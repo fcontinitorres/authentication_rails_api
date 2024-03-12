@@ -8,10 +8,10 @@ HTTP only cookie implementation: Utilizando session, essa é capaz de armazenar 
 Vamos usar essa session exatamente como usariamos em um sistema tradicional MVC msm sendo uma API.
 
 Gems
-- gem bcrypt-ruby 
+* gem bcrypt-ruby 
 	Criptografia e comparação das senhas dos usuários
-- gem rack-cors
-Providencia suporte para CORS (Cross-Origin Resource Sharing) para a Rack compativel com aplicações web
+* gem rack-cors
+	Providencia suporte para CORS (Cross-Origin Resource Sharing) para a Rack compativel com aplicações web
 
 
 This README would normally document whatever steps are necessary to get the
@@ -20,19 +20,12 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+	ruby 3.0.6p216
 
-* System dependencies
+* Rails version
+	Rails 7.1.3.2
 
-* Configuration
-
-* Database creation
-
-* Database initialization
+* Database
+	Postgresql
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
