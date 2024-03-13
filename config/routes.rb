@@ -10,4 +10,16 @@ Rails.application.routes.draw do
 
   root to: "static#home"
 
+  # rota teste para ver user cadastrados, foram do contexto do projeto, apenas para teste
+  resources :users, only: [:index]
+
+  # rota para login no sistema
+  resources :sessions, only: [:create]
+  # rota para registrar no sistema
+  resources :registrations, only: [:create]
+
+  # Verifica se usuario esta logado
+  get :logged_in, to: "sessions#logged_in"
+  # Sair da conta
+  delete :logout, to: "sessions#logout"
 end
